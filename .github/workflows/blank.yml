@@ -1,0 +1,9 @@
+import random
+print("hello user")
+symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+parrols = int(input("What span length do you want?"))
+password = ''
+
+for i in range(parrols):
+    password += random.choice(symbols)
+print(password)
